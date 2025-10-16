@@ -1,0 +1,1038 @@
+body {
+	container: body / inline-size;
+	position: relative;
+	min-height: 100%;
+	font-family: 'Do Hyeon';
+	line-height: normal;
+	letter-spacing: 0px;
+	background-color: #fff;
+	overflow: auto;
+	--minContent: 0;
+	--hSizing: FILL;
+	--vSizing: FILL;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: STRETCH;
+}
+
+.cover-page-btn {
+	opacity: 0.5;
+	width: 262px;
+	display: flex;
+	justify-content: center;
+	flex-shrink: 0;
+	font-style: normal;
+	letter-spacing: 0px;
+	text-align: center;
+	background: url(../assets/cover-page-ui-designer.png) center / cover no-repeat;
+	padding: 0 10px;
+	--minContent: 262;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.subtitle-a {
+	color: #fff;
+	--min-font-size: 20; --max-font-size: 32; font-size: var(--interpolate);
+	text-align: left;
+	--minContent: 493;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page1 {
+	position: absolute; top: 8px; left: -5px; right: 5px; 
+	height: 620px;
+	text-align: left;
+	background-color: #000;
+	--minContent: 0;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-img {
+	position: absolute; top: 50%; left: 18px; 
+	translate: 0 -50%;
+	width: calc(100% - 36px);
+	max-width: 476px;
+	border-radius: 50%;
+	--minContent: 309;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.cover-page-title {
+	position: absolute; top: 50%; left: 349px; right: 350px; 
+	translate: 0 -50%;
+	margin-top: -9px;
+	color: #f5f5f5;
+	font-size: 160px;
+	--minContent: 741;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: CENTER;
+}
+
+.cover-page-col1 {
+	container: cover-page-col1 / inline-size;
+	position: absolute; top: 30px; left: 632px; right: 0; 
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	color: #f80606;
+	font-size: 40px;
+	--minContent: 660;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-row-top {
+	margin-left: 50px; margin-right: 56px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	--minContent: 630;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+}
+
+.cover-page-ui-designer {
+	opacity: 0.5;
+	width: 262px;
+	flex-shrink: 0;
+	background: url(../assets/cover-page-ui-designer.png) center / cover no-repeat;
+	padding: 40px 8px 36px 17px;
+	--minContent: 262;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-btn1 {
+	margin-top: 42px;
+	padding-top: 45px;
+	padding-bottom: 31px;
+}
+
+.cover-page-btn-figma {
+	opacity: 0.5;
+	margin-left: 398px;
+	width: 262px;
+	display: flex;
+	justify-content: center;
+	align-self: start;
+	font-style: normal;
+	letter-spacing: 0px;
+	text-align: center;
+	background: url(../assets/cover-page-ui-designer.png) center / cover no-repeat;
+	padding: 45px 10px 30px 10px;
+	--minContent: 660;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-row-bottom {
+	margin-top: 38px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	--minContent: 524;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+}
+
+.cover-page-btn-ux-designer {
+	height: 125px;
+	padding-top: 40px;
+	padding-bottom: 36px;
+}
+
+.cover-page-node-js {
+	opacity: 0.5;
+	width: 262px; height: 125px;
+	flex-shrink: 0;
+	background: url(../assets/cover-page-ui-designer.png) center / cover no-repeat;
+	padding: 39px 46px 36px 65px;
+	--minContent: 262;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.about-page1 {
+	position: absolute; top: 628px; left: 0; right: 0; 
+	height: 620px;
+	color: #000;
+	--min-font-size: 20; --max-font-size: 32; font-size: var(--interpolate);
+	text-align: left;
+	background: url(../assets/about-page.png) center / cover no-repeat, linear-gradient(#000, #000) top left / auto auto no-repeat;
+	overflow: hidden;
+	--minContent: 0;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-subtitle {
+	position: absolute; top: 78px; left: 40px; right: 865px; 
+	--min-font-size: 110; --max-font-size: 128; font-size: var(--interpolate);
+	--minContent: 535;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-subtitle-i-m-siva-kumar {
+	position: absolute; top: 254px; left: 75px; right: 852px; 
+	--minContent: 513;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-group1 {
+	position: absolute; top: 196px; right: 171px; 
+	width: calc(100% - 342px); height: 364px;
+	max-width: 384px;
+	color: #f5f5f5;
+	--minContent: 0;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MAX;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-rect {
+	position: absolute; top: 0; left: 0; 
+	width: calc(100% - 0px); height: 364px;
+	max-width: 384px;
+	background-color: #f80606;
+	border-top-left-radius: 150px;
+	--minContent: 250;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-img {
+	position: absolute; top: 73px; left: 84px; 
+	width: 250px;
+	border-radius: 20px;
+	--minContent: 250;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-group2 {
+	position: absolute; top: 31px; left: -19px; 
+	rotate: -36deg;
+	transform-origin: 50% 50%;
+	width: 239px; height: 84px;
+	--minContent: 239;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-subtitle-i1 {
+	position: absolute; top: 49px; left: 14px; right: 14px; 
+	rotate: -51deg;
+	transform-origin: 50% 50%;
+	--minContent: 210;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-subtitle-symbol {
+	position: absolute; top: 39px; left: 23px; right: 23px; 
+	rotate: -46deg;
+	transform-origin: 50% 50%;
+	--minContent: 193;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-subtitle-m {
+	position: absolute; top: 24px; left: 31px; right: 31px; 
+	rotate: -35deg;
+	transform-origin: 50% 50%;
+	--minContent: 177;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-subtitle-d {
+	position: absolute; top: 5px; left: 76px; 
+	rotate: -16deg;
+	transform-origin: 50% 50%;
+	--minContent: 16;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-subtitle-e1 {
+	position: absolute; top: 1px; left: 98px; 
+	rotate: -6deg;
+	transform-origin: 50% 50%;
+	--minContent: 17;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-subtitle-s {
+	position: absolute; top: 1px; left: 121px; 
+	rotate: 4deg;
+	transform-origin: 50% 50%;
+	--minContent: 16;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-subtitle-i2 {
+	position: absolute; top: 3px; left: 143px; 
+	rotate: 12deg;
+	transform-origin: 50% 50%;
+	--minContent: 7;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-subtitle-g {
+	position: absolute; top: 8px; left: 155px; 
+	rotate: 20deg;
+	transform-origin: 50% 50%;
+	--minContent: 16;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-subtitle-n {
+	position: absolute; top: 17px; left: 176px; 
+	rotate: 30deg;
+	transform-origin: 50% 50%;
+	--minContent: 17;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-subtitle-e2 {
+	position: absolute; top: 31px; left: 195px; 
+	rotate: 40deg;
+	transform-origin: 50% 50%;
+	--minContent: 17;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-subtitle-r {
+	position: absolute; top: 46px; left: 212px; 
+	rotate: 50deg;
+	transform-origin: 50% 50%;
+	--minContent: 14;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.about-page2 {
+	container: about-page2 / inline-size;
+	position: absolute; top: 1248px; left: 0; right: 0; 
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	text-align: left;
+	background-color: #f2efe4;
+	padding: 72px 67px 0 68px;
+	--minContent: 1054;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-row {
+	height: 548px;
+	display: flex;
+	justify-content: space-between;
+	flex-shrink: 0;
+	background-color: #f80606;
+	padding: 90px 34px 39px 72px;
+	--minContent: 919;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+}
+
+.about-page-col-left {
+	margin-bottom: 165px;
+	width: 226px;
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	flex-shrink: 0;
+	font-size: 32px;
+	--minContent: 226;
+	--hSizing: FIXED;
+	--vSizing: FILL;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: STRETCH;
+}
+
+
+
+/* row */
+
+.row {
+	width: 201px; height: 40px;
+	display: flex;
+	justify-content: space-between;
+	flex-shrink: 0;
+	align-self: start;
+	--minContent: 226;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.row-graphic {
+	margin: 13px 0;
+	width: 15px;
+	flex-shrink: 0;
+	--minContent: 15;
+	--hSizing: FIXED;
+	--vSizing: FILL;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: STRETCH;
+}
+
+.row-subtitle {
+	align-self: start;
+	--minContent: 197;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+/* end row*/
+
+
+.about-page-subtitle-skills {
+	margin: 0 5px;
+	--minContent: 226;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.row1 {
+	width: unset;
+	justify-content: flex-start;
+	gap: 14px;
+	align-self: unset;
+}
+
+.about-page-col {
+	container: about-page-col / inline-size;
+	margin-top: -231px;
+	width: 177px;
+	display: flex;
+	flex-direction: column;
+	gap: 23px;
+	flex-shrink: 0;
+	align-self: center;
+	font-size: 64px;
+	--minContent: 177;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: CENTER;
+}
+
+.about-page-subtitle-tools {
+	--minContent: 177;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: CENTER;
+}
+
+.about-page-row-bottom {
+	display: flex;
+	align-items: center;
+	gap: 37px;
+	--minContent: 128;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+}
+
+.about-page-icon {
+	margin-top: 4px;
+	width: 120%;
+	min-width: 0;
+	flex-grow: 1;
+	--minContent: 55;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: CENTER;
+}
+
+.about-page-symbol-svg {
+	margin-top: -2px;
+	width: 80%; height: 83px;
+	flex-grow: 1;
+	--minContent: 36;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: CENTER;
+}
+
+.about-page-col-right {
+	width: 100%;
+	max-width: 410px;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	--minContent: 410;
+	--hSizing: FIXED;
+	--vSizing: FILL;
+	--pConstraintHorizontal: MAX;
+	--pConstraintVertical: STRETCH;
+}
+
+.about-page-subtitle-my-design {
+	font-size: 48px;
+	--minContent: 410;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.about-page-subtitle-i-design-with {
+	margin-left: 28px; margin-top: -1px;
+	color: #000;
+	--minContent: 410;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page2 {
+	position: absolute; top: 1868px; left: 0; right: 0; 
+	height: 620px;
+	display: flex;
+	align-items: flex-start;
+	gap: 98px;
+	color: #f80606;
+	text-align: center;
+	background-color: #000;
+	padding: 107px 54px;
+	overflow: hidden;
+	--minContent: 1072;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-cba {
+	position: absolute; top: -145px; bottom: 455px; left: -23px; right: -22px;
+	rotate: -180deg;
+	transform-origin: 50% 50%;
+	width: calc(100% - -23px - -22px);
+	min-width: 0; max-width: none;
+	--minContent: 965;
+	--hSizing: FILL;
+	--vSizing: FILL;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: STRETCH;
+}
+
+.cover-page-screenshot1 {
+	position: absolute; top: 350px; right: 74px; 
+	width: calc(100% - 148px);
+	max-width: 348px;
+	--minContent: 226;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MAX;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-col-left {
+	margin-top: 58px;
+	width: 100%;
+	max-width: 531px;
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	flex-shrink: 0;
+	--minContent: 531;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-subtitle1 {
+	--minContent: 531;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-subtitle-a-modern-cred {
+	margin: 7px 19px 0 19px;
+	color: #fff;
+	text-align: left;
+	--minContent: 531;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-link-bottom1 {
+	font-size: 36px;
+	text-decoration: underline;
+	--minContent: 531;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-screenshot2 {
+	margin-top: 69px;
+	width: 100%;
+	max-width: 335px;
+	flex-shrink: 0;
+	--minContent: 335;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page3 {
+	position: absolute; top: 2488px; left: -1px; right: 1px; 
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: #000;
+	padding: 136px 63px 114px 63px;
+	overflow: hidden;
+	--minContent: 1211;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-screenshot3 {
+	position: absolute; top: 143px; left: 45px; 
+	width: calc(100% - 90px);
+	max-width: 742px;
+	--minContent: 482;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-graphic1 {
+	position: absolute; top: 41px; left: 50%; 
+	translate: -50% 0;
+	width: calc(100% - 32px); height: 44px;
+	max-width: 1437px;
+	--minContent: 934;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-graphic2 {
+	position: absolute; z-index: 1; top: -1px; left: 50%; 
+	translate: -50% 0;
+	margin-left: 2px;
+	width: calc(100% - 32px); height: 104px;
+	max-width: 1440px;
+	--minContent: 938;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-col-top {
+	width: 100%;
+	max-width: 531px;
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+	align-self: end;
+	padding: 0 19px;
+	--minContent: 531;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MAX;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-subtitle-instagram {
+	margin: 0 92px;
+	color: #f80606;
+	text-align: right;
+	--minContent: 493;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-link-bottom2 {
+	margin-left: 1013px;
+	align-self: start;
+	color: #f80606;
+	text-align: left;
+	--minContent: 1085;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.col1 {
+	position: absolute; top: 3108px; left: 1px; right: -1px; 
+	display: flex;
+	flex-direction: column;
+	color: #f80606;
+	text-align: center;
+	--minContent: 936;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page4 {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: #000;
+	padding: 165px 54px 107px 54px;
+	--minContent: 639;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-screenshot4 {
+	position: absolute; top: 134px; left: 50%; 
+	translate: -50% 0;
+	margin-left: 143px;
+	width: calc(100% - 32px);
+	max-width: 406px;
+	--minContent: 407;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-screenshot5 {
+	position: absolute; top: 360px; right: 62px; 
+	width: calc(100% - 124px);
+	max-width: 386px;
+	--minContent: 251;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MAX;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-col2 {
+	width: 100%;
+	max-width: 531px;
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	--minContent: 531;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-subtitle3 {
+	--minContent: 531;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.cover-page-subtitle-a-fun-interactive {
+	margin: 7px 19px 0 19px;
+}
+
+.cover-page-link-bottom3 {
+	--minContent: 531;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.rect {
+	margin: 0 -1px -620px 1px;
+	height: 620px;
+	flex-shrink: 0;
+	background-color: #000;
+	--minContent: 936;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.col2 {
+	container: col2 / inline-size;
+	position: absolute; top: 3866px; left: 4px; right: 0; 
+	display: flex;
+	flex-direction: column;
+	gap: 182px;
+	background: url(../assets/col.png) top left / cover no-repeat;
+	padding: 0 126px;
+	--minContent: 1274;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.col-top {
+	margin-left: 3px;
+	width: 100%;
+	max-width: 465px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	--min-font-size: 62; --max-font-size: 96; font-size: var(--interpolate);
+	--minContent: 468;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.subtitle4 {
+	color: #e7e3e4;
+	text-align: left;
+	--minContent: 465;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.subtitle-together {
+	margin-top: -4px;
+	color: #f80606;
+	text-align: center;
+	--minContent: 465;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.row-bottom {
+	display: flex;
+	align-items: flex-start;
+	gap: 45px;
+	align-self: start;
+	color: #000;
+	font-size: 32px;
+	text-align: left;
+	--minContent: 1022;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+}
+
+.subtitle-b {
+	--minContent: 224;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.subtitle-left {
+	color: #f80606;
+	--minContent: 292;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.subtitle5 {
+	margin-left: 9px; margin-top: 20px;
+}
+
+.subtitle-right {
+	margin-top: 19px;
+}
+
+
+
+/* container queries (flex rows) */
+
+@container cover-page-col1 (width < 628px) {
+	.cover-page-row-top {
+		flex-direction: column;
+		align-items: center;
+		gap: 19px;
+	}
+	.cover-page-row-top > * {
+		margin-top: unset !important;
+		text-align: center;
+	}
+}
+
+@container cover-page-col1 (width < 522px) {
+	.cover-page-row-bottom {
+		flex-direction: column;
+		align-items: center;
+		gap: 19px;
+	}
+	.cover-page-row-bottom > * {
+		text-align: center;
+	}
+}
+
+@container about-page2 (width < 918px) {
+	.about-page-row {
+		height: unset;
+		flex-direction: column;
+		gap: 36px;
+	}
+	.about-page-row > * {
+		margin-top: unset !important;
+	}
+	.about-page-row > .about-page-col-left {
+		align-self: center;
+	}
+	.about-page-row > .about-page-col {
+		align-self: center;
+	}
+	.about-page-row > .about-page-col-right {
+		align-self: center;
+	}
+}
+
+@container about-page-col (width < 127px) {
+	.about-page-row-bottom {
+		flex-direction: column;
+		align-items: center;
+		gap: 16px;
+	}
+	.about-page-row-bottom > * {
+		margin-top: unset !important;
+	}
+	.about-page-row-bottom > .about-page-icon {
+		width: 100%;
+	}
+	.about-page-row-bottom > .about-page-symbol-svg {
+		width: 100%;
+	}
+}
+
+@container body (width < 1071px) {
+	.cover-page2 {
+		height: unset;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 34px;
+	}
+	.cover-page2 > * {
+		margin-top: unset !important;
+	}
+	.cover-page2 > .cover-page-screenshot1 {
+		align-self: center;
+	}
+	.cover-page2 > .cover-page-col-left {
+		align-self: center;
+	}
+	.cover-page2 > .cover-page-screenshot2 {
+		align-self: center;
+	}
+}
+
+@container col2 (width < 1021px) {
+	.row-bottom {
+		flex-direction: column;
+		align-items: center;
+		gap: 14px;
+	}
+	.row-bottom > * {
+		margin-left: unset !important; margin-right: unset !important; margin-top: unset !important;
+		text-align: center;
+	}
+}

@@ -1,0 +1,281 @@
+
+:root {
+	/* responsive margins / paddings */
+	--margin-sm: 16px;
+	--margin-md: 32px;
+}
+
+* {
+	--min-screen-size: 430;
+	--max-screen-size: 1440;
+	--interpolate-diff: calc(var(--max-font-size) - var(--min-font-size));
+	--interpolate: clamp(calc(var(--min-font-size) * 1px), calc((var(--min-font-size) * 1px) + var(--interpolate-diff) * ((100vw - calc(var(--min-screen-size) * 1px)) / (var(--max-screen-size) - var(--min-screen-size)))), calc(var(--max-font-size) * 1px));
+}
+
+html {
+	height: 100%;
+	font-size: 16px;
+}
+
+
+
+/* text utility classes */
+
+.subtitle2 {
+	font-size: 32px;
+}
+
+.subtitle3 {
+	--min-font-size: 35; --max-font-size: 64; font-size: var(--interpolate);
+}
+
+.link {
+	--min-font-size: 22; --max-font-size: 36; font-size: var(--interpolate);
+	text-decoration: underline;
+}
+
+.subtitle1 {
+	font-size: 64px;
+	font-family: 'Do Hyeon';
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0px;
+}
+
+.sub-text-red {
+	color: #f80606;
+}
+
+.sub-text-white {
+	color: #fff;
+}
+
+
+
+/* button hover utility classes */
+
+.hover-bright:hover {
+	filter: brightness(1.2);
+}
+
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+--------------------------------*/
+
+/* Medium Screens (Tablets, <1024px) */
+@media (max-width: 1024px) {
+  .cover-page-title {
+    font-size: 100px;
+    left: 200px;
+    right: 200px;
+  }
+
+  .cover-page-col1 {
+    left: 520px;
+    font-size: 28px;
+    gap: 30px;
+  }
+
+  .about-page1 {
+    height: auto;
+    padding: 80px 30px;
+  }
+
+  .about-page-subtitle {
+    font-size: 80px;
+    right: 500px;
+  }
+
+  .about-page-subtitle-i-m-siva-kumar {
+    right: 100px;
+    font-size: 20px;
+  }
+
+  .about-page-group1 {
+    position: relative;
+    margin: 60px auto 0;
+  }
+
+  .about-page2 {
+    padding: 40px;
+  }
+
+  .about-page-row {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 40px;
+  }
+
+  .cover-page2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    height: auto;
+    padding: 80px 30px;
+  }
+
+  .cover-page-screenshot1,
+  .cover-page-screenshot2 {
+    position: static;
+    max-width: 90%;
+  }
+
+  .cover-page3 {
+    padding: 80px 30px;
+  }
+
+  .cover-page-screenshot3 {
+    position: static;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .cover-page-col-top {
+    align-self: center;
+    text-align: center;
+  }
+}
+
+/* Small Screens (Phones, <768px) */
+@media (max-width: 768px) {
+  .cover-page1 {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .cover-page-img {
+    position: static;
+    margin: 0 auto 20px;
+    width: 250px;
+  }
+
+  .cover-page-title {
+    position: static;
+    font-size: 72px;
+    margin-bottom: 30px;
+  }
+
+  .cover-page-col1 {
+    position: static;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+  }
+
+  .cover-page-row-top,
+  .cover-page-row-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .cover-page-btn,
+  .cover-page-btn-figma,
+  .cover-page-node-js {
+    width: 200px;
+    font-size: 18px;
+    padding: 30px 10px;
+  }
+
+  .about-page-subtitle {
+    font-size: 48px;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+
+  .about-page-subtitle-i-m-siva-kumar {
+    position: static;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .about-page-group1 {
+    position: static;
+    margin: 40px auto;
+  }
+
+  .about-page2 {
+    padding: 40px 20px;
+  }
+
+  .about-page-row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about-page-col-left,
+  .about-page-col,
+  .about-page-col-right {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .cover-page2,
+  .cover-page3,
+  .cover-page4 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    height: auto;
+  }
+
+  .cover-page-screenshot4,
+  .cover-page-screenshot5 {
+    position: static;
+    max-width: 90%;
+    margin: 10px auto;
+  }
+
+  .col2 .row-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .subtitle4,
+  .subtitle-together {
+    font-size: 32px;
+  }
+}
+
+/* Very Small Screens (<480px) */
+@media (max-width: 480px) {
+  .cover-page-title {
+    font-size: 56px;
+  }
+
+  .cover-page-btn,
+  .cover-page-btn-figma,
+  .cover-page-node-js {
+    width: 160px;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .about-page-subtitle {
+    font-size: 36px;
+  }
+
+  .about-page-subtitle-i-m-siva-kumar {
+    font-size: 16px;
+  }
+
+  .cover-page-link-bottom1,
+  .cover-page-link-bottom2,
+  .cover-page-link-bottom3 {
+    font-size: 24px;
+  }
+
+  .subtitle-b {
+    font-size: 18px;
+  }
+}
